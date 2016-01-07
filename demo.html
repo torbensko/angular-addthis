@@ -1,0 +1,55 @@
+<html ng-app="sko.addThis">
+	<head>
+		<title ng-bind="meta.title"></title>
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+		<style>
+		</style>
+	</head>
+	<body ng-controller="DemoCtrl">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2>Simple demo</h2>
+					<p>
+						Inserts the AddThis social tool:
+					</p>
+					<p>
+						<add-this refresh="{{ meta.title }}"></add-this>
+					</p>
+					<p>
+						<em>Of note:</em> the tool doesn't work locally. Facebook and the
+						other social sites need to publically access your pages to work.
+					</p>
+					<p>
+						Furthermore, you need to use a tool like 
+						<a href="http://prerender.io">Pre-Render</a> for Angular to work
+						with social sites.
+					</p>
+				</div><!-- .col-sm-12 -->
+			</div><!-- .row -->
+		</div><!-- .container -->
+
+	  <script src="bower_components/jquery/dist/jquery.js"></script>
+	  <script src="bower_components/angular/angular.js"></script>
+	  <script src="bower_components/angular-jquery/angular-jquery.js"></script>
+	  <script src="angular-addthis.js"></script>
+	  <script>
+	  	angular.module('sko.addThis')
+	  		.config(function(addThisProvider) {
+	  			addThisProvider.setId('ra-5688cdd9570ee3de');
+	  		})
+	  		.run(function($rootScope) {
+	  			$rootScope.meta = {
+	  				title: 'AddThis'
+	  			};
+	  		})
+	  		.controller('DemoCtrl', function ($scope, $timeout) {
+	  			// Fake some asyncronous content
+	        $timeout(function() {
+	        	$scope.meta.title = 'AddThis (updated)';
+	        }, 500);
+	      });
+	  </script>
+	</body>
+</html>

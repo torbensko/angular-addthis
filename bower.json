@@ -1,0 +1,30 @@
+{
+  "name": "angular-addthis",
+  "authors": [
+    "Torben Sko <torben.sko@gmail.com>"
+  ],
+  "description": "A directive for adding the AddThis social sharing tool to your site",
+  "main": "angular-addthis.js",
+  "moduleType": [],
+  "keywords": [
+    "addthis",
+    "social",
+    "add",
+    "this",
+    "angular"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.8",
+    "angular-jquery": "torbensko/angular-jquery#~1.1.0"
+  }
+}

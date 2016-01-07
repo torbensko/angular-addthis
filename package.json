@@ -1,0 +1,34 @@
+{
+  "name": "angular-addthis",
+  "version": "1.0.0",
+  "description": "A directive for adding the AddThis social sharing tool to your site",
+  "main": "add-this.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "morgan": "^1.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torbensko/angular-addthis.git"
+  },
+  "keywords": [
+    "addthis",
+    "add",
+    "this",
+    "directive",
+    "angular"
+  ],
+  "author": "Torben Sko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/torbensko/angular-addthis/issues"
+  },
+  "homepage": "https://github.com/torbensko/angular-addthis#readme"
+}
