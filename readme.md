@@ -1,6 +1,10 @@
 # Angular AddThis directive
 
-Add the AddThis social sharing tool to your site.
+Add the AddThis social sharing tool to your site. 
+Its features include:
+
+- automatically imports the AddThis script
+- can responds to page changes through the use of watch attribute
 
 View [demo](http://torbensko-demos.s3.amazonaws.com/angular-addthis/demo.html).
 
@@ -13,11 +17,11 @@ Installing via bower:
 
 Add the angular module: 
 
-		sko.addThis
+    sko.addThis
 
 Initalise it with your ID:
 
-		addThisProvider.setId('abc');
+    addThisProvider.setId('abc');
 
 Add to a page by adding:
 
